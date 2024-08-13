@@ -1,7 +1,7 @@
 // Imports
 const express = require('express');
-const db = require('');
-const routes = require('');
+const db = require('./config/connection');
+// const routes = require('./routes');
 
 // Gets the current working directory of the Node.js process and stores it in the variable `cwd`
 cwd = process.cwd();
@@ -13,7 +13,7 @@ const app = express();
 // Adds middleware to the Express application for handling incoming requests
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(routes);
+// app.use(routes);
 
 // Runs server
 db.once('open', () => {
