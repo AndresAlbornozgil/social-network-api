@@ -54,6 +54,7 @@ module.exports = {
       return res.status(500).json(err);
     }
   },
+  
   // create a new thought
   async createThought(req, res) {
     try {
@@ -63,6 +64,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
+
   // Delete a thought and remove them from the course
   async deleteThought(req, res) {
     try {

@@ -50,6 +50,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
+  
   // Update a user
   async updateUser(req, res) {
     try {
@@ -93,6 +94,7 @@ async addFriend(req, res) {
     res.status(500).json(err);
   }
 },
+
 // Remove friend
 async removeFriend(req, res) {
   try {
